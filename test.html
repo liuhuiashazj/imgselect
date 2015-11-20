@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script type="text/javascript">
+    (function () {
+        var int = 1;
+
+        function Select(name) {
+            var p1=name;
+            this.getP1=function(){
+                console.log(p1);
+            };
+            int++;
+        }
+
+        Select.prototype = {
+            getInt: function () {
+                console.log(int);
+            }
+        };
+        window.$ = function(){
+            return new Select(arguments);
+        };
+    })();
+    var s1 = $('l1');
+    var s2 = $('l2');
+    var s3 = $('l3');
+    var s4 = $('l4');
+    s4.getInt();
+    s1.getInt();
+    s2.getP1=function(){
+        console.log(123);
+    };
+    s2.getP1();
+    s3.getP1();
+</script>
+</body>
+</html>

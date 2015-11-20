@@ -1,0 +1,45 @@
+/**
+ * Created with WebStorm.
+ * User: liuhui
+ * Date: 15/11/18
+ * Time: 19:10
+ * To change this template use File | Settings | File Templates.
+ */
+
+.img-select-wrap {
+    position: absolute;
+    cursor: pointer;
+}
+
+.img-select-mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: #000;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+
+.img-select-small-wrap {
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+
+}
+
+.img-select-small {
+    position: absolute;
+}
+
+.img-select-large-wrap {
+    position: absolute;
+    top: 0;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.img-select-large{
+    position: absolute;
+}
