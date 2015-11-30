@@ -14,8 +14,9 @@
         body {
             height: 600px;
         }
-        img{
-            width:400px;
+
+        img {
+            width: 400px;
         }
 
 
@@ -30,8 +31,11 @@
 <script type="text/javascript" src="src/imgselect.js"></script>
 <script type="text/javascript">
     setTimeout(function () {
-        var s1=$.ImgSelect('#test1', {});
-        var s2=$.ImgSelect('#test2', {});
+        var s1 = $.ImgSelect('#test1', {});
+        //var s2=$.ImgSelect('#test2', {});
+
+        var img = $.AutoImgSelect('#test2', {});
+        console.log(img);
     }, 1000);
 
 </script>
